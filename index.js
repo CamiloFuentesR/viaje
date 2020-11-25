@@ -41,6 +41,6 @@ app.use(express.static('public'));
 //agregar router
 app.use('/',router);
 
-app.listen(port,host, () => {
+app.listen(host,port, () => {
     console.log(`El servidor esta funcionando en el puerto ${port}`)
 });
