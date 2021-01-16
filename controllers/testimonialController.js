@@ -16,7 +16,10 @@ const guardarTestimoniales = async (req, res) => {
     if (mensaje.trim() === '') {
         errores.push({ mensaje: 'El mensaje esta vacío' })
     }
-    
+
+    setTimeout(() => {
+    }, 3000);
+
     if (errores.length > 0) {
 
         //connsultar testimniales existentes
